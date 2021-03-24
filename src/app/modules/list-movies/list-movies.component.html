@@ -1,0 +1,37 @@
+
+<div class="container">
+    <div class="card-header">
+        <div class="d-flex justify-content-center"><h2>Manage Videos</h2></div>
+    </div>
+    <hr>
+   
+    <div class="row">
+        <div class="col-lg-4" *ngFor ="let list of MoviesList">
+           
+        <div class="card"> 
+            <div class="card-body">
+              <span class="image"><img src="{{list.imageUrl}}" height="200" width="150"/></span>                     
+              <hr/>
+              <h3 class="card-title">{{list.movieName}}&nbsp; &nbsp;{{list.starcast}}&nbsp;&nbsp;&nbsp;{{list.generName}}</h3>
+              <div class="row" >
+                <button mat-icon-button>
+                    <mat-icon mat-icon-button color='primary'>edit</mat-icon>
+                </button>
+               
+                <button mat-icon-button>
+                    <mat-icon mat-icon-button color="warn" >delete</mat-icon>
+                    
+                  </button>
+                  </div>
+                 
+
+            </div>
+          </div>
+        
+        </div>
+        </div> 
+   
+    </div>
+
+
+        

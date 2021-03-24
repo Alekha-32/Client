@@ -1,0 +1,31 @@
+<mat-nav-list>
+    <div class="sidebar">
+    <div class="profile-card">
+        <div class="header">
+            <h2>Mandalapu Alekha</h2>
+            <h4>Alekhachowdary32@gmail.com</h4>
+        </div>
+        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Soufiane FADIL">
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Pages</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="././modules/dashboard" click="goToDashBoard()"><mat-icon>dashboard</mat-icon>Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="././modules/add-movie" (click)="gotoAdd()"><mat-icon>add_to_photos</mat-icon>Add Movie</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles"><mat-icon>update</mat-icon>Update Movie</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles"><mat-icon>delete</mat-icon>Delete Movie</a>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Tools</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="././modules/users-list" (click)="gotoUsers()"><mat-icon>people</mat-icon>
+        List of users</a>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="././modules/list-movies" (click)="gotoListMovies()"><mat-icon>menu</mat-icon>
+        List of Movies</a>
+    </div>
+
+</mat-nav-list>

@@ -1,0 +1,72 @@
+<div class="container">
+  <form [formGroup]="MovieForm">
+    <div class="form-group">
+      <label for="movieName">Movie Title: </label>
+        <div class="controls">
+
+<input type="text" id="MovieTitle" placeholder="Movie Title" class="form-control" formControlName="MovieTitle">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="movieDuration">Movie Duration: </label>
+        <div class="controls">
+          <input type="text" id="Duration" placeholder="Movie Duration" class="form-control" formControlName="Duration">
+      </div>
+    </div>
+    <div class="form-group">
+          <label for="movieRelease">Movie Release: </label>
+            <div class="controls">
+              <input type="date" id="ReleaseDate" placeholder="Movie Release" class="form-control" formControlName="ReleaseDate">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="movieRating">Movie Rating: </label>
+            <div class="controls">
+              <input type="text" id="Rating" placeholder="Movie Rating" class="form-control" formControlName="Rating">
+          </div>
+        </div>
+            <div class="form-group">
+                  <label for="movieSummary">Movie Plot: </label>
+                    <div class="controls">
+                      <input type="text" id="MoviePlot" placeholder="Movie Plot" class="form-control" formControlName="Plot">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Hidden">Hidden: </label>
+                    <div class="controls">
+                      <input type="number" id="Hidden" placeholder="Hidden" class="form-control" formControlName="Hidden">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="ThumbnailUrl">ThumbnailUrl: </label>
+                    <div class="controls">
+                      <input type="text" id="ThumbnailUrl" placeholder="ThumbnailUrl" class="form-control" formControlName="ThumbnailUrl">
+                  </div>
+                </div>
+                
+                    <div class="form-group">
+                          <label for="VideoUrl">Video Url: </label>
+                            <div class="controls">
+                              <input type="text" id="VideoUrl" placeholder="Video Url" class="form-control" formControlName="VideoUrl">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="generName">gener Name: </label>
+                            <div class="controls">
+                              <input type="text" id="generName" placeholder="generName" class="form-control" formControlName="generName">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="StarCastName">StarCast: </label>
+                            <div class="controls">
+                              <input type="text" id="StarCastName" placeholder="starcast" class="form-control" formControlName="StarCastName">
+                          </div>
+                        </div>
+    
+    <div class="form-group">
+      <button class="btn btn-primary" (click)="addMovie()" type="submit" style="width: 30%">
+          Add Movie
+      </button>
+    </div>
+  </form>
+  </div>
